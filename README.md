@@ -1,6 +1,7 @@
 # codeigniter-version-scanner
 
 Purpose of this project is to make a scanner that can detect:
+
 	- If a website is using CodeIgniter
 	- What version of CodeIgniter is used
 
