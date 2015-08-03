@@ -24,9 +24,15 @@ If you want to join this project, please contact me.
 # Nice-to-have's
 	- It can be nice to include CVE warnings similar to WPScan
 		http://www.cvedetails.com/version-list/6918/11625/1/Codeigniter-Codeigniter.html
-	- And other warnings like:
+	- And other version specific security warnings like:
 		https://github.com/Dionach/CodeIgniterXor
-		https://github.com/bcit-ci/CodeIgniter/issues/1705
-		https://github.com/bcit-ci/CodeIgniter/issues/2965
-		https://github.com/bcit-ci/CodeIgniter/issues/3292
-		https://nealpoole.com/blog/2013/07/codeigniter-21-xss-clean-filter-bypass/
+		https://github.com/bcit-ci/CodeIgniter/pull/370 - SQL injection
+		https://github.com/bcit-ci/CodeIgniter/pull/486 - MIME-type Injection
+		https://github.com/bcit-ci/CodeIgniter/pull/606 - Potential SQL injection
+		https://github.com/bcit-ci/CodeIgniter/pull/1366 - Code Injection
+		https://github.com/bcit-ci/CodeIgniter/issues/1705 - XSS
+		https://github.com/bcit-ci/CodeIgniter/issues/2667 - XSS
+		https://github.com/bcit-ci/CodeIgniter/issues/2956 - XSS
+		https://github.com/bcit-ci/CodeIgniter/issues/3189 - Template Injection
+		https://github.com/bcit-ci/CodeIgniter/issues/3292 - XSS
+		https://nealpoole.com/blog/2013/07/codeigniter-21-xss-clean-filter-bypass/ - XSS
