@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>Code Igniter User Guide</title>
+
+<style type='text/css' media='all'>@import url('../userguide.css');</style>
+<link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
+
+<script type="text/javascript" src="../scripts/nav.js"></script>
+<script type="text/javascript" src="../scripts/prototype.lite.js"></script>
+<script type="text/javascript" src="../scripts/moo.fx.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+	myHeight = new fx.Height('nav', {duration: 400}); 
+	myHeight.hide();
+}
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='expires' content='-1' />
+<meta http-equiv= 'pragma' content='no-cache' />
+<meta name='robots' content='all' />
+<meta name='author' content='Rick Ellis' />
+<meta name='description' content='Code Igniter User Guide' />
+
+</head>
+<body>
+
+<!-- START NAVIGATION -->
+<div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle.jpg" width="153" height="44" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="masthead">
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td><h1>Code Igniter User Guide Version 1.2</h1></td>
+<td id="breadcrumb_right"><a href="../toc.html">Full Table of Contents</a></td>
+</tr>
+</table>
+</div>
+<!-- END NAVIGATION -->
+
+
+<!-- START BREADCRUMB -->
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td id="breadcrumb">
+<a href="http://www.codeigniter.com/">Code Igniter Home</a> &nbsp;&#8250;&nbsp;
+<a href="../index.html">User Guide Home</a> &nbsp;&#8250;&nbsp;
+Change Log
+</td>
+<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="www.codeigniter.com/user_guide/" />Search User Guide&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Go" /></form></td>
+</tr>
+</table>
+<!-- END BREADCRUMB -->
+
+<br clear="all" />
+
+
+<!-- START CONTENT -->
+<div id="content">
+
+<h1>Change Log</h1>
+
+
+<h2>Version 1.2</h2>
+<p>Release Date: March 21, 2006</p>
+
+<ul>
+<li>Redesigned some internal aspects of the framework to resolve scoping problems that surfaced during the beta tests. The problem was most notable when instantiating classes in your constructors, particularly if those classes in turn did work in their constructors.</li>
+<li>Added a global function named <a href="ancillary_classes.html">get_instance()</a> allowing the main Code Igniter object to be accessible throughout your own classes.</li>
+<li>Added new <a href="../helpers/file_helper.html">File Helper</a>:  delete_files()</li>
+<li>Added new <a href="../helpers/url_helper.html">URL Helpers</a>:  base_url(), index_page()</li>
+<li>Added the ability to create your own <a href="creating_libraries.html">core libraries</a> and store them in your local application directory.</li>
+<li>Added an <kbd>overwrite</kbd> option to the <a href="../libraries/file_uploading.html">Upload class</a>, enabling files to be overwritten rather than having the file name appended.</li>
+<li>Added Javascript Calendar plugin.</li>
+<li>Added search feature to user guide.  Note: This is done using Google, which at the time of this writing has not crawled all the pages of the docs.</li>
+<li>Updated the parser class so that it allows tag pars within other tag pairs.</li>
+<li>Fixed a bug in the DB "where" function.</li>
+<li>Fixed a bug that was preventing custom config files to be auto-loaded.</li>
+<li>Fixed a bug in the mysql class bind feature that prevented question marks in the replacement data.</li>
+<li>Fixed some bugs in the xss_clean function</li>
+</ul>
+
+
+
+
+
+<h2>Version Beta 1.1</h2>
+<p>Release Date: March 10, 2006</p>
+
+<ul>
+<li>Added a <a href="../libraries/calendar.html">Calendaring class</a>.</li>
+<li>Added support for running <a href="multiple_apps.html">multiple applications</a> that share a common Code Igniter backend.</li>
+<li>Moved the "uri protocol" variable from the index.php file into the config.php file</li>
+<li>Fixed a problem that was preventing certain function calls from working within constructors.</li>
+<li>Fixed a problem that was preventing the $this->load->library function from working in constructors.</li>
+<li>Fixed a bug that occurred when the session class was loaded using the auto-load routine.</li>
+<li>Fixed a bug that can happen with PHP versions that do not support the E_STRICT constant</li>
+<li>Fixed a data type error in the form_radio function (form helper)</li>
+<li>Fixed a bug that was preventing the xss_clean function from being called from the validation class.</li>
+<li>Fixed the cookie related config names, which were incorrectly specified as $conf rather than $config</li>
+<li>Fixed a pagination problem in the scaffolding.</li>
+<li>Fixed a bug in the mysql class "where" function.</li>
+<li>Fixed a regex problem in some code that trimmed duplicate slashes.</li>
+<li>Fixed a bug in the br() function in the HTML helper</li>
+<li>Fixed a syntax mistake in the form_dropdown function in the Form Helper.</li>
+<li>Removed the "style" attributes form the form helpers.</li>
+<li>Updated the documentation. Added "next/previous" links to each page and fixed various typos.</li>
+</ul>
+
+<h2>Version Beta 1.0 </h2>
+<p>Release Date: February 28, 2006</p>
+<p>First publicly released version.</p>
+
+</div>
+<!-- END CONTENT -->
+
+
+<div id="footer">
+<p>
+Previous Topic:&nbsp;&nbsp;<a href="../license.html">License Agreement</a>
+&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+Next Topic:&nbsp;&nbsp;<a href="credits.html">Credits</a>
+<p>
+
+<p><a href="#top">Top of Page</a> &nbsp;&middot;&nbsp; <a href="../index.html">User Guide Home</a><p>
+<p><a href="http://www.codeigniter.com">Code Igniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006 &nbsp;&middot;&nbsp; <a href="http://www.pmachine.com">pMachine, Inc.</a></p>
+</div>
+
+</body>
+</html>
