@@ -25,7 +25,7 @@ If you want to join this project, please contact me.
 	- It can be nice to include CVE warnings similar to WPScan
 		http://www.cvedetails.com/version-list/6918/11625/1/Codeigniter-Codeigniter.html
 	- And other version specific security warnings like:
-		https://github.com/Dionach/CodeIgniterXor
+		https://github.com/Dionach/CodeIgniterXor - Session cookie decryption vulnerability 
 		https://github.com/bcit-ci/CodeIgniter/pull/370 - SQL injection
 		https://github.com/bcit-ci/CodeIgniter/pull/486 - MIME-type Injection
 		https://github.com/bcit-ci/CodeIgniter/pull/606 - Potential SQL injection
