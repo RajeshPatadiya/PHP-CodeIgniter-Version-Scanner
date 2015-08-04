@@ -35,4 +35,4 @@ If you want to join this project, please contact me.
 		https://github.com/bcit-ci/CodeIgniter/issues/2956 - XSS
 		https://github.com/bcit-ci/CodeIgniter/issues/3189 - Template Injection
 		https://github.com/bcit-ci/CodeIgniter/issues/3292 - XSS
-		https://nealpoole.com/blog/2013/07/codeigniter-21-xss-clean-filter-bypass/ - XSS
+		https://nealpoole.com/blog/2013/07/codeigniter-21-xss-clean-filter-bypass/ - XSS (CVE-2013-4891)
