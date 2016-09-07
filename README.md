@@ -1,5 +1,7 @@
 # codeigniter-version-scanner
 
+This concept version is outdated. The new script is located here: https://github.com/Calico90/codeigniter-version-tester/.
+
 Purpose of this project is to make a scanner that can detect:
 
 	- If a website is using CodeIgniter
